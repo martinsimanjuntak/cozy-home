@@ -24,6 +24,6 @@ spring:
         dialect: org.hibernate.dialect.OracleDialect
 logging:
   level:
-    org.hibernate.SQL: debug
-    org.hibernate.orm.jdbc.bind: DEBUG
+    org.hibernate.SQL: info
+    org.hibernate.orm.jdbc.bind: info
 
