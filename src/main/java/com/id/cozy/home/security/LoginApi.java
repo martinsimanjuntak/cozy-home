@@ -1,6 +1,6 @@
-package com.id.cozy.home;
+package com.id.cozy.home.security;
 
-import com.id.cozy.home.annotation.CheckAccess;
+import com.id.cozy.home.security.annotation.CheckAccess;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

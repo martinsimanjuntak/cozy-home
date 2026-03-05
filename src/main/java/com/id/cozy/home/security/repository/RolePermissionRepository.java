@@ -1,7 +1,7 @@
-package com.id.cozy.home.repository;
+package com.id.cozy.home.security.repository;
 
-import com.id.cozy.home.entity.RoleEntity;
-import com.id.cozy.home.entity.RolePermissionEntity;
+import com.id.cozy.home.security.entity.RoleEntity;
+import com.id.cozy.home.security.entity.RolePermissionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

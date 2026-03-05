@@ -1,4 +1,4 @@
-package com.id.cozy.home.exception;
+package com.id.cozy.home.security.exception;
 
 import lombok.Getter;
 

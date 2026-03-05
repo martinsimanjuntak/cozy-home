@@ -1,6 +1,6 @@
-package com.id.cozy.home.repository;
+package com.id.cozy.home.security.repository;
 
-import com.id.cozy.home.entity.UserEntity;
+import com.id.cozy.home.security.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

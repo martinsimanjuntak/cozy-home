@@ -1,6 +1,6 @@
-package com.id.cozy.home.entity;
+package com.id.cozy.home.security.entity;
 
-import com.id.cozy.home.entity.base.BaseEntity;
+import com.id.cozy.home.security.entity.base.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

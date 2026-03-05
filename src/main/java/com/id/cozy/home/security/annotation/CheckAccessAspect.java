@@ -1,12 +1,11 @@
-package com.id.cozy.home.annotation;
+package com.id.cozy.home.security.annotation;
 
-import com.id.cozy.home.exception.CustomSecurityException;
-import com.id.cozy.home.service.UserPermissionService;
+import com.id.cozy.home.security.exception.CustomSecurityException;
+import com.id.cozy.home.security.service.UserPermissionService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
@@ -20,7 +19,7 @@ public class CheckAccessAspect {
     private final UserPermissionService permissionService;
     private final HttpServletRequest request;
 
-    @Before("@annotation(com.id.cozy.home.annotation.CheckAccess)")
+    @Before("@annotation(com.id.cozy.home.security.annotation.CheckAccess)")
     public void checkAccess() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (auth == null || !auth.isAuthenticated()) {

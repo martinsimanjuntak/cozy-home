@@ -1,11 +1,11 @@
-package com.id.cozy.home.service;
+package com.id.cozy.home.security.service;
 
-import com.id.cozy.home.entity.UserEntity;
-import com.id.cozy.home.entity.UserRoleEntity;
-import com.id.cozy.home.exception.CustomSecurityException;
-import com.id.cozy.home.repository.RolePermissionRepository;
-import com.id.cozy.home.repository.UserRepository;
-import com.id.cozy.home.repository.UserRoleRepository;
+import com.id.cozy.home.security.entity.UserEntity;
+import com.id.cozy.home.security.entity.UserRoleEntity;
+import com.id.cozy.home.security.exception.CustomSecurityException;
+import com.id.cozy.home.security.repository.RolePermissionRepository;
+import com.id.cozy.home.security.repository.UserRepository;
+import com.id.cozy.home.security.repository.UserRoleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

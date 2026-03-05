@@ -1,4 +1,4 @@
-package com.id.cozy.home.config;
+package com.id.cozy.home.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

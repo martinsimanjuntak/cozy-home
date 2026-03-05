@@ -1,4 +1,4 @@
-package com.id.cozy.home.exception;
+package com.id.cozy.home.security.exception;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
