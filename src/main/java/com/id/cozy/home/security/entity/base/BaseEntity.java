@@ -1,4 +1,4 @@
-package com.id.cozy.home.entity.base;
+package com.id.cozy.home.security.entity.base;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

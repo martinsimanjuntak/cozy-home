@@ -1,4 +1,4 @@
-package com.id.cozy.home.annotation;
+package com.id.cozy.home.security.annotation;
 
 import java.lang.annotation.*;
 
