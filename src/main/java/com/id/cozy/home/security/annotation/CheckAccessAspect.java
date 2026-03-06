@@ -11,6 +11,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Component;
 
+import static com.id.cozy.home.security.util.JwtUtil.getUsername;
+
 @Aspect
 @Component
 @RequiredArgsConstructor
@@ -25,8 +27,7 @@ public class CheckAccessAspect {
         if (auth == null || !auth.isAuthenticated()) {
             throw new CustomSecurityException(401, "User not authenticated");
         }
-        Jwt jwt = (Jwt) auth.getPrincipal();
-        String username = jwt.getClaim("preferred_username");
+        String username = getUsername();
         String path = request.getRequestURI();
         String method = request.getMethod();
 
